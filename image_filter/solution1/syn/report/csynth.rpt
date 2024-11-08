@@ -1,0 +1,24 @@
+
+
+================================================================
+== Synthesis Summary Report of 'filterImage'
+================================================================
++ General Information: 
+    * Date:           Fri Nov  8 19:42:59 2024
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        image_filter
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------+------+-------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-------------+-----+
+    |    Modules    | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |        |    |           |             |     |
+    |    & Loops    | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  | DSP|     FF    |     LUT     | URAM|
+    +---------------+------+-------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-------------+-----+
+    |+ filterImage  |     -|  -2.00|      354|  3.540e+03|         -|      355|     -|        no|  8 (1%)|   -|  1805 (1%)|  24950 (35%)|    -|
+    +---------------+------+-------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-------------+-----+
+

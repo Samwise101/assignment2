@@ -1,0 +1,39 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'samuel' on host 'samuel-ASUS-TUF-Gaming-A15-FA507NU-FA507NU' (Linux_x86_64 version 5.15.0-124-generic) on Fri Nov 08 19:48:09 CET 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/samuel/VitisHLS/assig2'
+Sourcing Tcl script '/home/samuel/VitisHLS/assig2/image_filter/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project image_filter 
+INFO: [HLS 200-10] Opening project '/home/samuel/VitisHLS/assig2/image_filter'.
+INFO: [HLS 200-1510] Running: set_top filterImage 
+INFO: [HLS 200-1510] Running: add_files image_filter/image_filter.hpp 
+INFO: [HLS 200-10] Adding design file 'image_filter/image_filter.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files image_filter/image_filter.cpp 
+INFO: [HLS 200-10] Adding design file 'image_filter/image_filter.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb image_filter/image_filter_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'image_filter/image_filter_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/samuel/VitisHLS/assig2/image_filter/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/samuel/MpSoc4Drones/ip/filterImage.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/samuel/MpSoc4Drones/ip/filterImage.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name filterImage filterImage 
+INFO: [HLS 200-1510] Running: set_directive_top -name filter_image filterImage 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../image_filter_tb.cpp in debug mode
+   Generating csim.exe
+54,92,100,
+55,98,95,
+Test failed!INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.69 seconds. CPU system time: 0.35 seconds. Elapsed time: 0.52 seconds; current allocated memory: 93.394 MB.

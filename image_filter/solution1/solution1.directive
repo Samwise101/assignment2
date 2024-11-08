@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="filterImage" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="filterImage"/>
+            </pragma>
+        </directive>
+        <directive functionName="filterImage" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="filter_image"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
