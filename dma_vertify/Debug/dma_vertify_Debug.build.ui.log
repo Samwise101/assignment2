@@ -1,0 +1,28 @@
+2024-11-10T11:31:32.15133300255-11:31:32 **** Incremental Build of configuration Debug for project dma_vertify ****
+000-make all 
+000-Building file: ../src/helloworld.c
+000-Invoking: ARM v8 gcc compiler
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/tools/Xilinx/MPSoC4Drones/vitis/u96v2_sbc_mp4d/export/u96v2_sbc_mp4d/sw/u96v2_sbc_mp4d/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-../src/helloworld.c: In function 'main':
+000/dma_vertify/src/helloworld.c148-1-1implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]1-../src/helloworld.c:148:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+000-  148 |     init_platform();
+000-      |     ^~~~~~~~~~~~~
+000/dma_vertify/src/helloworld.c173-1-1implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]1-../src/helloworld.c:173:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+000-  173 |     cleanup_platform();
+000-      |     ^~~~~~~~~~~~~~~~
+000-Finished building: ../src/helloworld.c
+000- 
+000-Building target: dma_vertify.elf
+000-Invoking: ARM v8 gcc linker
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/tools/Xilinx/MPSoC4Drones/vitis/u96v2_sbc_mp4d/export/u96v2_sbc_mp4d/sw/u96v2_sbc_mp4d/standalone_psu_cortexa53_0/bsplib/lib -o "dma_vertify.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-Finished building target: dma_vertify.elf
+000- 
+000-Invoking: ARM v8 Print Size
+000-aarch64-none-elf-size dma_vertify.elf  |tee "dma_vertify.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  44372	   4208	4201836	4250416	 40db30	dma_vertify.elf
+000-Finished building: dma_vertify.elf.size
+000- 
+00255-
+11:31:32 Build Finished (took 588ms)
+
